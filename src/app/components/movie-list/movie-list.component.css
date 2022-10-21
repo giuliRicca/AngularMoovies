@@ -1,0 +1,30 @@
+#movie-list{
+    max-width: 1200px;
+    margin-block: auto;
+}
+.movie-wrapper{
+    width: calc(100% - 80px);
+    overflow: hidden;
+}
+
+.movie{
+    width: 100%;
+    background: none;
+    margin-top: 2rem;	
+    background-position: center;
+    position: relative;
+    margin-right: 10px;
+    -webkit-box-reflect: below 5px
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+    -webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.movie img{  
+    width: 500px;
+    height: auto;
+}
+.movie:hover{
+    transform:  scale(1.1);
+}
+    

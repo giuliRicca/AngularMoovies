@@ -1,0 +1,35 @@
+<div class="movie_card">
+    <div class="info_section">
+      <div class="movie_header">
+        <img class="movie-img" src="{{data.posterUrl}}"/>
+        <h1>{{data.title}}</h1>
+        <h4>{{data.premiereDate.substring(0,4)}}</h4>
+        <span class="minutes">{{data.duration}} min</span>
+        <p class="type">
+          <span *ngFor="let genre of data.genres">
+            {{genre.name}}
+          </span>
+        </p>
+        <br>
+        <a class="btn btn-danger" href="{{data.trailerUrl}}" target="_blank">
+          Watch Trailer
+        </a>
+      </div>    
+    </div>
+    <div class="blur_back" style="background-image: url('{{data.posterUrl}}');"></div>
+  </div>
+
+<div>
+  <h2 class="text-white">Cinemas</h2>
+  <agm-map [latitude]="lat" [longitude]="long">
+    <agm-marker *ngFor="let cinema of data.cinemas"  [latitude]="cinema.latitude" 
+    [longitude]="cinema.longitude">
+    {{cinema.name}}
+    </agm-marker>
+  </agm-map>
+  <ul>
+    <li *ngFor="let cinema of data.cinemas">
+      {{cinema.name}}
+    </li>
+  </ul>
+</div>

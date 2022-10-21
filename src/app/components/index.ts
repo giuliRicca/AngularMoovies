@@ -1,0 +1,5 @@
+export * from "./home/home.component"
+export * from "./navbar/navbar.component"
+export * from "./not-found404/not-found404.component"
+export * from "./movie-list/movie-list.component"
+export * from "./movie-detail/movie-detail.component"
