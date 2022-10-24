@@ -1,6 +1,6 @@
 <!-- <div class="row justify-content-center p-5" id="movie-list">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" *ngFor="let movie of data">
-        <div class="movie-wrapper">
+        <div class="movie">
             <a href="movies/{{movie.id}}" class="profile-name">
                 <img src="{{movie.posterUrl}}" class="img img-responsive" >
             </a>
@@ -8,24 +8,15 @@
     </div>
 </div> -->
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item " *ngFor="let movie of data; let index = index" [class.active]="index == 0" >
-        <div class="movie-wrapper">
-            <div class="movie">
-                <a href="movies/{{movie.id}}" class="profile-name">
-                <img src="{{movie.posterUrl}}" class="img img-responsive" >
-                </a>
-            </div>
-        </div>
+
+<p-carousel [value]="data" [numVisible]="6" [numScroll]="5" [circular]="true" [responsiveOptions]="responsiveOptions" id="movie-list">
+  <ng-template let-movie pTemplate="item">
+      <div class="product-item p-4">
+          <div class="movie">
+              <a href="movies/{{movie.id}}" class="profile-name">
+                  <img src="{{movie.posterUrl}}" class="img img-responsive" >
+              </a>
+          </div>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </ng-template>
+</p-carousel>

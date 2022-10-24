@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
+import {CarouselModule} from 'primeng/carousel';
+
 import { 
   NavbarComponent, 
   HomeComponent, 
@@ -29,6 +31,7 @@ import {
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    CarouselModule
   ],
   exports: [
     NavbarComponent,
