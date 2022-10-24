@@ -1,0 +1,113 @@
+{
+    "movies":[
+        {"id": 1,
+        "title": "Avatar: The Way of Water",
+        "onBillboard": "false",
+        "premiereDate": "2022-15-12",
+        "posterUrl": "https://es.web.img2.acsta.net/pictures/22/05/10/11/20/2725565.jpg",
+        "trailerUrl":"https://www.youtube.com/watch?v=5J57Hp_f-18",
+        "duration": 180,
+        "genres":[
+            {
+                "id": 1,
+                "name": "sci-fy"
+            },
+            {
+                "id": 3,
+                "name": "action"
+            }
+        ],
+        "cinemas": [
+            ""
+        ]},
+        {"id": 2,
+        "title": "Spider-Man: No Way Home",
+        "onBillboard": "true",
+        "premiereDate": "2021-17-12",
+        "posterUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spider-man-no-way-home-1661253004.jpg",
+        "trailerUrl":"https://www.youtube.com/watch?v=rt-2cxAiPJk",
+        "duration": 148,
+        "genres":[
+            {
+                "id": 1,
+                "name": "sci-fy"
+            },
+            {
+                "id": 3,
+                "name": "action"
+            }
+        ],
+        "cinemas": [
+            ""
+        ]},
+        {"id": 3,
+        "title": "Black Adam",
+        "onBillboard": "true",
+        "premiereDate": "2022-20-10",
+        "duration": 124,
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BYzZkOGUwMzMtMTgyNS00YjFlLTg5NzYtZTE3Y2E5YTA5NWIyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg",
+        "trailerUrl":"https://www.youtube.com/watch?v=kOFTZWyaOgc",
+        "genres":[
+            {
+                "id": 1,
+                "name": "sci-fy"
+            },
+            {
+                "id": 3,
+                "name": "action"
+            }
+        ],
+        "cinemas": [
+            ""
+        ]},
+        {"id": 4,
+        "title": "Pinocchio",
+        "onBillboard": "true",
+        "premiereDate": "2022-08-9",
+        "duration": 105,
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDIyYjM3N2EtOTU1MC00YTA4LTgzNjctMTNjODcxZTZhODU2XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg",
+        "trailerUrl":"https://www.youtube.com/watch?v=2vNVGZGlUok",
+        "genres":[
+            {
+                "id": 2,
+                "name": "family"
+            },
+            {
+                "id": 6,
+                "name": "adventure"
+            }
+        ],
+        "cinemas": [
+            {
+                "name":"Hoyts",
+                "latitude":"",
+                "longitude":""
+            }
+        ]},
+        {"id": 5,
+        "title": "Top Gun: Maverick",
+        "onBillboard": "true",
+        "premiereDate": "2022-26-5",
+        "duration": 131,
+        "posterUrl": "https://m.media-amazon.com/images/M/MV5BZWYzOGEwNTgtNWU3NS00ZTQ0LWJkODUtMmVhMjIwMjA1ZmQwXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg",
+        "trailerUrl":"https://www.youtube.com/watch?v=qSqVVswa420",
+        "genres":[
+            {
+                "id": 3,
+                "name": "action"
+            },
+            {
+                "id": 6,
+                "name": "adventure"
+            }
+        ],
+        "cinemas": [
+            {
+                "name":"Hoyts",
+                "latitude":"",
+                "longitude":""
+            }
+        ]}
+    ]
+        
+}

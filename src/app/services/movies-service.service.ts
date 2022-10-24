@@ -5,21 +5,21 @@ import { MovieFilters } from '../models/movie-filters';
   providedIn: 'root'
 })
 export class MoviesService {
-  url = "https://localhost:7245/api/movies"
+  url = "http://localhost:3000/movies"
   constructor(private http: HttpClient) { }
   getMovies(){
     return this.http.get(this.url)
   }
 
   getMoviesFilter(movieFilter:MovieFilters){
-    var queryparams:any = {} 
-    if (movieFilter.title) queryparams.title = movieFilter.title
-    if (movieFilter.genreId) queryparams.genreId = movieFilter.genreId
-    if(movieFilter.onBillboard) queryparams.onBillboard = movieFilter.onBillboard
-    if (movieFilter.commingSoon) queryparams.commingSoon = movieFilter.commingSoon
+    // var queryparams:any = {} 
+    // if (movieFilter.title) queryparams.title = movieFilter.title
+    // if (movieFilter.genreId) queryparams.genreId = movieFilter.genreId
+    // if(movieFilter.onBillboard) queryparams.onBillboard = movieFilter.onBillboard
+    // if (movieFilter.commingSoon) queryparams.commingSoon = movieFilter.commingSoon
 
-    return this.http.get(this.url + '/filter', {
-      params: queryparams,
+    return this.http.get(this.url, {
+      // params: queryparams,
       observe: 'response'
     })
   }
