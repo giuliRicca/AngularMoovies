@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
 import {CarouselModule} from 'primeng/carousel';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 import { 
   NavbarComponent, 
@@ -31,7 +32,8 @@ import {
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    SharedModule
   ],
   exports: [
     NavbarComponent,

@@ -1,5 +1,5 @@
 import { Component, OnInit,  } from '@angular/core';
-import { MovieFilters } from 'src/app/models/movie-filters';
+// import { MovieFilters } from 'src/app/models/movie-filters';
 import { MoviesService } from 'src/app/services/movies-service.service';
 @Component({
   selector: 'app-movie-list',
@@ -9,6 +9,7 @@ import { MoviesService } from 'src/app/services/movies-service.service';
 export class MovieListComponent implements OnInit {
   data:any;
   responsiveOptions:any;
+  loading:boolean = true;
   constructor(private moviesData:MoviesService) { 
     this.responsiveOptions = [
     {
@@ -35,6 +36,7 @@ export class MovieListComponent implements OnInit {
     // } 
     this.moviesData.getMovies().subscribe(result => {
       this.data = result;
+      this.loading = false;
     })
 
   }

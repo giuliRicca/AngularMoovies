@@ -8,9 +8,10 @@
     </div>
 </div> -->
 
-
+<app-loading-spinner *ngIf="this.loading" ></app-loading-spinner>
 <p-carousel [value]="data" [numVisible]="6" [numScroll]="5" [circular]="true" [responsiveOptions]="responsiveOptions" id="movie-list">
-  <ng-template let-movie pTemplate="item">
+    
+    <ng-template let-movie pTemplate="item">
       <div class="product-item p-4">
           <div class="movie">
               <a href="movies/{{movie.id}}" class="profile-name">
